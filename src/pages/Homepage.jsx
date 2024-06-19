@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react'
 import RecipeCard from '../components/RecipeCard'
 import { getRandomColor } from "../lib/utils";
 
-const APP_ID = "9e5407b8"
-const APP_KEY = "4f98f602b17ab941fffa6110ba9ce391"
+const APP_ID = import.meta.env.APP_ID;
+const APP_KEY = import.meta.env.APP_KEY;
 
 const HomePage = () => {
     const [recipes, setRecipes] = useState([]);
